@@ -166,7 +166,50 @@
   font-variant-numeric: tabular-nums;
 }
 
+.github-star-btn {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  z-index: 100;
+  transition: all 0.2s ease;
+  color: var(--hud-text);
+  cursor: pointer;
+}
+
+.github-star-btn:hover {
+  background: var(--hud-bg-hover);
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.github-star-btn .github-icon {
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.github-star-btn .github-star-icon {
+  color: #fbbf24;
+  font-size: 12px;
+  line-height: 1;
+}
+
 @media (max-width: 768px) {
+  .github-star-btn {
+    top: 8px;
+    left: 8px;
+    padding: 5px 10px;
+    font-size: 10px;
+    gap: 6px;
+  }
   .galactic-radar-container {
     display: none;
   }
